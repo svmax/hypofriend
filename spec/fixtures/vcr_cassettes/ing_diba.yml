@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://offer-v3.hypofriend.de/api/v5/new-offers?loan_amount=350000&property_value=350000&repayment=1.0&years_fixed=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - offer-v3.hypofriend.de
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Jun 2021 21:43:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"93c52ae93d395380a2e6b1145bc1d774"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d55f0004-bde8-4069-af5c-c640df909b5a
+      X-Runtime:
+      - '0.005364'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"data":{"cached":false,"offers":[{"institution_name":"ING_DIBA","borrowing_rate":1.68}]}}'
+  recorded_at: Tue, 29 Jun 2021 21:43:19 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://offer-v3.hypofriend.de/api/v5/new-offers?loan_amount=333&property_value=MOCK&repayment=0.5&years_fixed=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - offer-v3.hypofriend.de
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Tue, 29 Jun 2021 21:57:41 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '46'
+      Connection:
+      - keep-alive
+      X-Request-Id:
+      - 7f3e843e-2bf2-4370-8d7a-62b07eb99082
+      X-Runtime:
+      - '0.015453'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"status":500,"error":"Internal Server Error"}'
+  recorded_at: Tue, 29 Jun 2021 21:57:40 GMT
+recorded_with: VCR 6.0.0

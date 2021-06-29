@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://offer-v3.hypofriend.de/api/v5/new-offers?loan_amount=1&property_value=-350000&repayment=1.0&years_fixed=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - offer-v3.hypofriend.de
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Jun 2021 21:46:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"4a4faf01da52443c9d1481405de35566"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 643dcf0b-3405-4b4f-ab60-ba56635c32b9
+      X-Runtime:
+      - '0.006966'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"data":{"cached":false,"offers":[{"institution_name":"ERGO","borrowing_rate":1.57}]}}'
+  recorded_at: Tue, 29 Jun 2021 21:46:46 GMT
+recorded_with: VCR 6.0.0
