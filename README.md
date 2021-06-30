@@ -16,7 +16,7 @@ And then execute:
 
 ## Usage
 
-To se how it works you can simply create a test.rb file:
+To see how it works you can simply create a test.rb file:
 ```
 require 'bundler'
 Bundler.require(:default)
